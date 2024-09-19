@@ -5,6 +5,54 @@
   grid-gap: 15px;
   height: 720px;
 }
+.reflectionpage {
+  display: grid;
+  grid-template-columns: 10fr 5fr 5fr 10fr;
+  grid-template-rows: 5fr 5fr 5fr 20fr 20fr 20fr 20fr 1fr 5fr;
+  grid-gap: 15px;
+  height: 720px;
+}
+.homepage {
+  display: grid;
+  grid-template-columns: 10fr 1fr 5fr 5fr 5fr;
+  grid-template-rows: 5fr 5fr 5fr 20fr 5fr;
+  grid-gap: 15px;
+  height: 720px;
+}
+.projectpage {
+  display: grid;
+  grid-template-columns: 10fr 10fr 10fr;
+  grid-template-rows: 5fr 5fr 5fr 20fr 5fr;
+  grid-gap: 15px;
+  height: 720px;
+}
+.OmnitrixTrio, .FistsOfFury, .HollowKnight {
+  background-color: #003668;
+    border: 4px solid #00e1ff;
+    position:relative;
+    padding: 25px 25px 25px 25px;
+    color: #00FF2A;
+    font-weight: bold;
+    text-align: center;
+}
+.OmnitrixTrio {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4; 
+}
+.FistsOfFury {
+  grid-column-start: 2;
+  grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4; 
+}
+.HollowKnight{
+  grid-column-start: 3;
+  grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4; 
+}
 .title {
     font-size: 175%;
     color: #00FF2A;
@@ -16,9 +64,15 @@
 }
 .aboutphoto {
     grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 4; 
+}
+.homeportrait {
+  grid-column-start: 4;
+grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 4; 
 }
 .meabout {
     color: #FFFFFF;
@@ -32,25 +86,57 @@
     color: #bbbbbb;
     text-align: center;
 }
-.jobstats {
+.BBstat {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+    grid-row-end: 4;
+}
+.kohlsstat {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 5;
+    grid-row-end: 5;
+}
+.schnucksstat {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 6;
+    grid-row-end: 6;
+}
+.BBdesc {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+    grid-row-end: 4;
+}
+.kohlsdesc {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 5;
+    grid-row-end: 5;
+}
+.schnucksdesc {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 6;
+    grid-row-end: 6;
+}
+.BBstat, .kohlsstat, .schnucksstat {
     background-color: #003668;
     border: 4px solid #00e1ff;
     position:relative;
     padding: 25px 25px 25px 25px;
     color: #00FF2A;
-    width: 150px;
-    display: inline-block;
     font-weight: bold;
-    margin-left: 34%;
 }
-.jobdesc {
+.BBdesc, .kohlsdesc, .schnucksdesc {
     background-color: #003668;
     border: 4px solid #00e1ff;
     position:relative;
+    width: 300px;
     padding: 25px 25px 25px 25px;
     color: #FFFFFF;
-    width: 300px;
-    display: inline-block;
 }
 .hed {
     text-align: center;
@@ -65,12 +151,44 @@
     text-align: center;
     font-size: 200%;
     color: #00FF2A;
+    grid-column-start: 1;
+  grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 7;  
+}
+.homehead {
+  text-align: center;
+    font-size: 200%;
+    color: #00FF2A;
+    grid-column-start: 1;
+  grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3; 
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.homeintro {
+  color: #FFFFFF;
+    grid-column-start: 1;
+  grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4; 
+    text-align: center; 
+    margin-left: 10%;
+    margin-right: 5%;
 }
 .Reflection {
     background-color: #00899b;
     color: #FFFFFF;
     padding: 15px 15px 15px 15px;
     text-align: center;
+    grid-column-start: 1;
+  grid-column-end: 6;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    margin-left: 2%; 
+    margin-right: 2%;
 }
 .first-para::first-letter {
     font-size: 150%;
@@ -99,6 +217,119 @@ footer {
     color: #FFFFFF;
     grid-column-start: 1;
   grid-column-end: 6;
-  grid-row-start: 7;
-  grid-row-end: 7;
+  grid-row-start: 9;
+  grid-row-end: 9;
+}
+.line {
+  grid-column-start: 3;
+  grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 8;
+  border-left: 2px solid #FFFFFF;
+}
+@media only screen and (max-width: 1138px) {
+.homeportrait {
+  grid-column-start: 4;
+  grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+.homehead {
+  text-align: center;
+    font-size: 200%;
+    color: #00FF2A;
+    grid-column-start: 1;
+  grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3; 
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.homeintro {
+  color: #FFFFFF;
+    grid-column-start: 1;
+  grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 5; 
+    text-align: center; 
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.line {
+  display: none;
+}
+.OmnitrixTrio {
+  grid-column-start: 1;
+  grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 4; 
+}
+.FistsOfFury {
+  grid-column-start: 1;
+  grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 5; 
+}
+.HollowKnight{
+  grid-column-start: 1;
+  grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 6; 
+}
+}
+@media only screen and (max-width: 640px) {
+  .homeportrait {
+    grid-column-start: 4;
+    grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 4; 
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  .homehead {
+  text-align: center;
+    font-size: 200%;
+    color: #00FF2A;
+    grid-column-start: 1;
+  grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3; 
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.homeintro {
+  color: #FFFFFF;
+    grid-column-start: 1;
+  grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 5; 
+    text-align: center; 
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.line {
+  display: none;
+}
+.OmnitrixTrio {
+  grid-column-start: 2;
+  grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4; 
+}
+.FistsOfFury {
+  grid-column-start: 2;
+  grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 5; 
+}
+.HollowKnight{
+  grid-column-start: 2;
+  grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 6; 
+}
 }

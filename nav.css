@@ -1,3 +1,10 @@
+.mobilebar {
+    top: 0px;
+    grid-column-start: 1;
+    grid-column-end: 6; 
+    grid-row-start: 2;
+    grid-row-end: 2;  
+}
 nav>ul li {
     list-style-type: none;
     background-color: #006B12;
@@ -22,10 +29,17 @@ nav ul>li ul {
     top: 100%;
     display: none;
 }
+nav ul>li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #006B12;
+}
 nav ul ul li {
     float:none;
 }
-nav>ul>li:hover>ul{
+nav>ul>li:hover>ul {
     display: block;
 }
 nav a {
@@ -34,4 +48,46 @@ nav a {
     padding: 15px 15px 15px 15px;
     width: 150px;
     margin: 5px;
+}
+#hamburger {
+    display: none;
+}
+@media (max-width: 640px) {
+ nav ul>li ul {
+    display: none;
+}
+    .mobilebar {
+        background-color: #00e1ff; 
+        width: 100%;
+        height: 65px;
+    }
+
+    #hamburger {
+        display: inline-block;
+        font-size: 2em;
+        padding: 10px;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #hamburger:active + ul, nav:hover ul {
+        display: flex;
+    }
+
+    nav>ul li {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav a {
+        padding: 15px 15px;
+        width: 100%;
+    }
 }
