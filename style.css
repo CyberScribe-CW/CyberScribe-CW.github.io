@@ -287,6 +287,33 @@ footer {
     grid-row-start: 6;
     grid-row-end: 6; 
 }
+nav ul {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+#hamburger {
+  display: inline-block;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+#hamburger:checked + nav ul {
+  display: flex;
+}
+
+nav>ul li {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+
+nav a {
+  padding: 15px;
+  width: 100%;
+}
 }
 @media only screen and (max-width: 640px) {
   .homeportrait {
