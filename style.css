@@ -234,6 +234,15 @@ footer {
 #menu-toggle {
   display: none;
 }
+@media (min-width: 768px) {
+  nav ul {
+      display: block; /* Always show the menu on desktop */
+  }
+  
+  #hamburger {
+      display: none; /* Hide the hamburger icon on desktop */
+  }
+}
 @media only screen and (max-width: 1138px) {
 .homeportrait {
   grid-column-start: 4;
