@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu Example</title>
+    <link rel="stylesheet" href="styletest.css">
+</head>
+<body>
+    <header class="mobilebar">
+        <!-- This hidden checkbox will control the menu's visibility -->
+        <input type="checkbox" id="menu-toggle">
+        
+        <!-- Label for the hamburger icon -->
+        <label for="menu-toggle" id="hamburger">&#9776;</label>
+
+        <!-- The menu list -->
+        <nav id="menu">
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li>
+                    <a href="#projects">Projects</a>
+                    <ul>
+                        <li><a href="#link1">Link 1</a></li>
+                        <li><a href="#link2">Link 2</a></li>
+                        <li><a href="#link3">Link 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

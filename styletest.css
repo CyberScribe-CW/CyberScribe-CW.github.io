@@ -1,0 +1,58 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #020840;
+}
+
+header.mobilebar {
+    background-color: #003668;
+    padding: 10px;
+}
+
+#hamburger {
+    font-size: 30px;
+    color: #00e1ff;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+}
+
+/* Hide the actual checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Menu styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hide by default */
+}
+
+nav ul li {
+    background-color: #003668;
+    padding: 10px;
+    border-bottom: 1px solid #00e1ff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00FBFF;
+}
+
+/* Show the menu when the checkbox is checked */
+#menu-toggle:checked + label + #menu ul {
+    display: block;
+}
+
+/* Optional: for desktop view */
+@media (min-width: 768px) {
+    nav ul {
+        display: block; /* Always show the menu on desktop */
+    }
+    
+    #hamburger {
+        display: none; /* Hide the hamburger icon on desktop */
+    }
+}
