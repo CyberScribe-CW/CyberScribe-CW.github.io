@@ -275,32 +275,14 @@ footer {
   .homeintro, .homehead {
     margin: 0 5%;
   }
+
   nav ul {
     flex-direction: column;
     width: 100%;
   }
+
   nav ul li {
     width: 100%;
     text-align: center;
-  }
-nav ul>li ul {
-  display: none;
-}
-
-  nav ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-  }
-
-  nav>ul li {
-      float: none;
-      width: 100%;
-      text-align: left;
-  }
-
-  nav a {
-      padding: 15px 15px;
-      width: 100%;
   }
 }
