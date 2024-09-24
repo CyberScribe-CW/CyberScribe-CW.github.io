@@ -38,6 +38,7 @@ nav {
     background-color: #006B12;
     padding: 0;
     list-style: none;
+    z-index: 9999;
   }
   
   nav ul li ul li {
