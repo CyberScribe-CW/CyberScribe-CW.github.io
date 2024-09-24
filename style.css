@@ -9,18 +9,18 @@ body {
   background-color: #020840;
 }
 .AboutPage {
-    display: grid;
-  grid-template-columns: 5fr 5fr 1fr 5fr 5fr;
-  grid-template-rows: 5fr 5fr 5fr 20fr 20fr 1fr 5fr;
-  grid-gap: 15px;
-  height: 720px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 15px;
+  gap: 15px;
 }
 .reflectionpage {
   display: grid;
-  grid-template-columns: 10fr 5fr 5fr 10fr;
-  grid-template-rows: 5fr 5fr 5fr 20fr 20fr 20fr 20fr 1fr 5fr;
-  grid-gap: 15px;
-  height: 720px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 15px;
+  gap: 15px;
 }
 .homepage {
   display: grid;
@@ -31,10 +31,10 @@ body {
 }
 .projectpage {
   display: grid;
-  grid-template-columns: 10fr 10fr 10fr;
-  grid-template-rows: 5fr 5fr 5fr 20fr 5fr;
-  grid-gap: 15px;
-  height: 720px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 15px;
+  gap: 15px;
 }
 .OmnitrixTrio, .FistsOfFury, .HollowKnight {
   background-color: #003668;
@@ -45,7 +45,7 @@ body {
     font-weight: bold;
     text-align: center;
 }
-.OmnitrixTrio {
+/*.OmnitrixTrio {
   grid-column-start: 1;
   grid-column-end: 1;
     grid-row-start: 4;
@@ -62,7 +62,7 @@ body {
   grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 4; 
-}
+}*/
 .title {
   font-size: 175%;
   color: #00FF2A;
@@ -70,28 +70,23 @@ body {
   margin-bottom: 10px;
 }
 .aboutphoto {
-    grid-column-start: 3;
-  grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 4; 
+  max-width: 100%;
+  height: auto;
 }
 .homeportrait img {
   max-width: 100%;
   height: auto;
 }
 .meabout {
-    color: #FFFFFF;
-    grid-column-start: 2;
-  grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 5; 
-    text-align: center; 
+  color: #FFFFFF;
+  text-align: center;
+  margin: 20px 10%;
 }
 .quote {
     color: #bbbbbb;
     text-align: center;
 }
-.BBstat {
+/*BBstat {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 4;
@@ -126,7 +121,7 @@ body {
   grid-column-end: 3;
   grid-row-start: 6;
     grid-row-end: 6;
-}
+}*/
 .BBstat, .kohlsstat, .schnucksstat {
     background-color: #003668;
     border: 4px solid #00e1ff;
@@ -139,27 +134,20 @@ body {
     background-color: #003668;
     border: 4px solid #00e1ff;
     position:relative;
-    width: 300px;
     padding: 25px 25px 25px 25px;
     color: #FFFFFF;
 }
 .hed {
-    text-align: center;
-    font-size: 200%;
-    color: #00FF2A;
-    grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 3;
-  grid-row-end: 3;
+  font-size: 175%;
+  color: #00FF2A;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .hedextra {
-    text-align: center;
-    font-size: 200%;
-    color: #00FF2A;
-    grid-column-start: 1;
-  grid-column-end: 6;
-    grid-row-start: 7;
-    grid-row-end: 7;  
+  font-size: 175%;
+  color: #00FF2A;
+  text-align: center;
+  margin-bottom: 10px; 
 }
 .homehead {
   text-align: center;
@@ -177,12 +165,12 @@ body {
     color: #FFFFFF;
     padding: 15px 15px 15px 15px;
     text-align: center;
-    grid-column-start: 1;
+    /*grid-column-start: 1;
   grid-column-end: 6;
     grid-row-start: 8;
     grid-row-end: 8;
     margin-left: 2%; 
-    margin-right: 2%;
+    margin-right: 2%;*/
 }
 .first-para::first-letter {
     font-size: 150%;
@@ -197,11 +185,8 @@ body {
     background-color: #006B12;
     border: 4px solid #02e328;
     text-align:center;
-    padding: 5px 75px 5px 75px;
-    grid-column-start: 3;
-  grid-column-end: 3;
-    grid-row-start: 6;
-    grid-row-end: 6;
+    padding: 5px 20px 5px 20px;
+    margin: 20px 10%;
 }
 footer {
   background-color: #000;
@@ -218,7 +203,10 @@ footer {
 .homepage > * {
   margin: 0 auto;
 }
-
+/* Ensuring the grid items are aligned properly */
+.AboutPage > * {
+  margin: 0 auto;
+}
 #menu-toggle:checked + label + #menu ul {
   display: block;
 }
