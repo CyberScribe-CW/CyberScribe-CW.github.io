@@ -172,7 +172,7 @@ body {
     margin: 20px 10%;
 }
 footer {
-  background-color: #000;
+  background-image: url(images/footerbackground.png);
   color: #FFF;
   text-align: center;
   padding: 20px;
