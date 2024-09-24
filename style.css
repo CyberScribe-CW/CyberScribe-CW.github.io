@@ -58,10 +58,12 @@ body {
   margin-bottom: 10px;
 }
 .aboutphoto {
+  position:relative;
   max-width: 100%;
   height: auto;
 }
 .homeportrait img {
+  position:relative;
   max-width: 100%;
   height: auto;
 }
@@ -129,12 +131,6 @@ BBstat {
     color: #FFFFFF;
     padding: 15px 15px 15px 15px;
     text-align: center;
-    /*grid-column-start: 1;
-  grid-column-end: 6;
-    grid-row-start: 8;
-    grid-row-end: 8;
-    margin-left: 2%; 
-    margin-right: 2%;*/
 }
 .first-para::first-letter {
     font-size: 150%;
