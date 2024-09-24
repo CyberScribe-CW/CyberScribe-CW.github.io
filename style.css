@@ -1,5 +1,12 @@
-/** {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #020840;
 }
 .AboutPage {
     display: grid;
@@ -17,10 +24,10 @@
 }
 .homepage {
   display: grid;
-  grid-template-columns: 10fr 1fr 5fr 5fr 5fr;
-  grid-template-rows: 5fr 5fr 5fr 20fr 5fr;
-  grid-gap: 15px;
-  height: 720px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 15px;
+  gap: 15px;
 }
 .projectpage {
   display: grid;
@@ -57,13 +64,10 @@
     grid-row-end: 4; 
 }
 .title {
-    font-size: 175%;
-    color: #00FF2A;
-    grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-gap: 0px;
+  font-size: 175%;
+  color: #00FF2A;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .aboutphoto {
     grid-column-start: 3;
@@ -71,11 +75,9 @@
     grid-row-start: 4;
     grid-row-end: 4; 
 }
-.homeportrait {
-  grid-column-start: 4;
-grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 4; 
+.homeportrait img {
+  max-width: 100%;
+  height: auto;
 }
 .meabout {
     color: #FFFFFF;
@@ -161,25 +163,14 @@ grid-column-end: 4;
 }
 .homehead {
   text-align: center;
-    font-size: 200%;
-    color: #00FF2A;
-    grid-column-start: 1;
-  grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3; 
-    margin-left: 10%;
-    margin-right: 5%;
-    margin-top: 2%;
+  font-size: 200%;
+  color: #00FF2A;
+  margin-top: 20px;
 }
 .homeintro {
   color: #FFFFFF;
-    grid-column-start: 1;
-  grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 4; 
-    text-align: center; 
-    margin-left: 10%;
-    margin-right: 5%;
+  text-align: center;
+  margin: 20px 10%;
 }
 .Reflection {
     background-color: #00899b;
@@ -213,22 +204,19 @@ grid-column-end: 4;
     grid-row-end: 6;
 }
 footer {
-    background-color: #000000;
-    text-align:center;
-    position:sticky;
-    padding: 25px 25px 25px 25px;
-    color: #FFFFFF;
-    grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 9;
-  grid-row-end: 9;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
 }
 .line {
-  grid-column-start: 3;
-  grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 8;
-  border-left: 2px solid #FFFFFF;
+  display: none;
+}
+
+/* Ensuring the grid items are aligned properly */
+.homepage > * {
+  margin: 0 auto;
 }
 
 #menu-toggle:checked + label + #menu ul {
@@ -246,7 +234,7 @@ footer {
       display: none;
   }
 }
-@media only screen and (max-width: 1138px) {
+/*@media only screen and (max-width: 1138px) {
 .homeportrait {
   grid-column-start: 4;
   grid-column-end: 4;
@@ -298,41 +286,19 @@ footer {
     grid-row-start: 6;
     grid-row-end: 6; 
 }
-}
+}*/
 @media only screen and (max-width: 640px) {
-  .homeportrait {
-    grid-column-start: 4;
-    grid-column-end: 4;
-      grid-row-start: 4;
-      grid-row-end: 4; 
-    margin-left: auto;
-    margin-right: auto; 
+  .homeintro, .homehead {
+    margin: 0 5%;
   }
-  .homehead {
-  text-align: center;
-    font-size: 200%;
-    color: #00FF2A;
-    grid-column-start: 1;
-  grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 3; 
-    margin-left: 10%;
-    margin-right: 5%;
-    margin-top: 2%;
-}
-.homeintro {
-  color: #FFFFFF;
-    grid-column-start: 1;
-  grid-column-end: 6;
-    grid-row-start: 5;
-    grid-row-end: 5; 
-    text-align: center; 
-    margin-left: 10%;
-    margin-right: 5%;
-}
-.line {
-  display: none;
-}
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
 .OmnitrixTrio {
   grid-column-start: 2;
   grid-column-end: 2;
@@ -393,88 +359,5 @@ nav ul>li ul {
   nav a {
       padding: 15px 15px;
       width: 100%;
-  }
-}*/
-/* General Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #020840;
-}
-
-.homepage {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  padding: 20px;
-  gap: 15px;
-}
-
-.title {
-    font-size: 175%;
-    color: #00FF2A;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.homeportrait {
-  text-align: center;
-}
-
-.homeportrait img {
-  max-width: 100%;
-  height: auto;
-}
-
-.homehead {
-  text-align: center;
-  font-size: 200%;
-  color: #00FF2A;
-  margin-top: 20px;
-}
-
-.homeintro {
-  color: #FFFFFF;
-  text-align: center;
-  margin: 20px 10%;
-}
-
-footer {
-    background-color: #000;
-    color: #FFF;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.line {
-  display: none;
-}
-
-/* Ensuring the grid items are aligned properly */
-.homepage > * {
-  margin: 0 auto;
-}
-
-/* Responsive Adjustments */
-@media only screen and (max-width: 640px) {
-  .homeintro, .homehead {
-    margin: 0 5%;
-  }
-
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav ul li {
-    width: 100%;
-    text-align: center;
   }
 }
