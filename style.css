@@ -173,12 +173,6 @@ footer {
 .AboutPage > * {
   margin: 0 auto;
 }
-#menu-toggle:checked + label + #menu ul {
-  display: block;
-}
-#menu-toggle {
-  display: none;
-}
 @media (min-width: 768px) {
   nav ul {
       display: block;
