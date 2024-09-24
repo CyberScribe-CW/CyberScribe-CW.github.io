@@ -45,12 +45,6 @@ body {
     font-weight: bold;
     text-align: center;
 }
-.OmnitrixTrio {
-}
-.FistsOfFury {
-}
-.HollowKnight{
-}
 .title {
   font-size: 175%;
   color: #00FF2A;
@@ -75,18 +69,6 @@ body {
 .quote {
     color: #bbbbbb;
     text-align: center;
-}
-BBstat {
-}
-.kohlsstat {
-}
-.schnucksstat {
-}
-.BBdesc {
-}
-.kohlsdesc {
-}
-.schnucksdesc {
 }
 .BBstat, .kohlsstat, .schnucksstat {
     background-color: #003668;
