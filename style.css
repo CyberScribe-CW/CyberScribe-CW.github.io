@@ -285,4 +285,92 @@ footer {
     width: 100%;
     text-align: center;
   }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #020840;
+  }
+  .OmnitrixTrio, .FistsOfFury, .HollowKnight {
+    background-color: #003668;
+      border: 4px solid #00e1ff;
+      position:relative;
+      padding: 25px 25px 25px 25px;
+      color: #00FF2A;
+      font-weight: bold;
+      text-align: center;
+  }
+  .title {
+    font-size: 175%;
+    color: #00FF2A;
+    text-align: center;
+  }
+  .meabout {
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .quote {
+      color: #bbbbbb;
+      text-align: center;
+  }
+  .BBstat, .kohlsstat, .schnucksstat {
+      background-color: #003668;
+      border: 4px solid #00e1ff;
+      position:relative;
+      padding: 25px 25px 25px 25px;
+      color: #00FF2A;
+      font-weight: bold;
+  }
+  .BBdesc, .kohlsdesc, .schnucksdesc {
+      background-color: #003668;
+      border: 4px solid #00e1ff;
+      position:relative;
+      padding: 25px 25px 25px 25px;
+      color: #FFFFFF;
+  }
+  .hed {
+    font-size: 175%;
+    color: #00FF2A;
+    text-align: center;
+  }
+  .hedextra {
+    font-size: 175%;
+    color: #00FF2A;
+    text-align: center;
+  }
+  .homehead {
+    text-align: center;
+    font-size: 200%;
+    color: #00FF2A;
+  }
+  .homeintro {
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .Reflection {
+      background-color: #00899b;
+      color: #FFFFFF;
+      padding: 15px 15px 15px 15px;
+      text-align: center;
+  }
+  .first-para::first-letter {
+      font-size: 150%;
+      color: #2bff00;
+      text-align: center;
+  }
+  .indent {
+      text-indent: 10px;
+      text-align: center;
+  }
+  .resumelink {
+      background-color: #006B12;
+      border: 4px solid #02e328;
+      text-align:center;
+      padding: 5px 20px 5px 20px;
+  }
+  footer {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+  }
 }
