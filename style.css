@@ -45,24 +45,12 @@ body {
     font-weight: bold;
     text-align: center;
 }
-/*.OmnitrixTrio {
-  grid-column-start: 1;
-  grid-column-end: 1;
-    grid-row-start: 4;
-    grid-row-end: 4; 
+.OmnitrixTrio {
 }
 .FistsOfFury {
-  grid-column-start: 2;
-  grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 4; 
 }
 .HollowKnight{
-  grid-column-start: 3;
-  grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 4; 
-}*/
+}
 .title {
   font-size: 175%;
   color: #00FF2A;
@@ -86,42 +74,18 @@ body {
     color: #bbbbbb;
     text-align: center;
 }
-/*BBstat {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 4;
-    grid-row-end: 4;
+BBstat {
 }
 .kohlsstat {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 5;
-    grid-row-end: 5;
 }
 .schnucksstat {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 6;
-    grid-row-end: 6;
 }
 .BBdesc {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 4;
-    grid-row-end: 4;
 }
 .kohlsdesc {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 5;
-    grid-row-end: 5;
 }
 .schnucksdesc {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 6;
-    grid-row-end: 6;
-}*/
+}
 .BBstat, .kohlsstat, .schnucksstat {
     background-color: #003668;
     border: 4px solid #00e1ff;
