@@ -45,6 +45,19 @@
   footer img:hover {
     transform: scale(1.2);
   }
+
+a {
+  color: #0ecee8;
+}
+
+a:hover {
+  color: #00e1ff;
+}
+
+a:visited {
+  color: #ff6200;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -118,6 +131,34 @@ body {
     color: #bbbbbb;
     text-align: center;
 }
+table, th, td {
+  background-color: #003668;
+  border: 4px solid #00e1ff;
+  border-collapse: collapse;
+  padding: 25px 25px 25px 25px;
+  position:relative;
+}
+thead {
+  color: #ff0d00;
+    font-weight: bold;
+    font-size: larger;
+}
+tbody tr th:nth-child(odd) {
+  color: #00FF2A;
+  font-weight: bold;
+}
+tbody tr th:nth-child(even) {
+  color: #FFFFFF;
+}
+/*.jobstats, .jobdesc {
+  background-color: #003668;
+    border: 4px solid #00e1ff;
+    position:relative;
+    padding: 25px 25px 25px 25px;
+    color: #ff0d00;
+    font-weight: bold;
+    font-size: large;
+}
 .BBstat, .kohlsstat, .schnucksstat {
     background-color: #003668;
     border: 4px solid #00e1ff;
@@ -132,7 +173,7 @@ body {
     position:relative;
     padding: 25px 25px 25px 25px;
     color: #FFFFFF;
-}
+}*/
 .hed {
   font-size: 175%;
   color: #00FF2A;
