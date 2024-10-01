@@ -238,6 +238,75 @@ footer {
 .AboutPage > * {
   margin: 0 auto;
 }
+.contactformsection {
+  padding: 20px;
+  background-color: #003668;
+  color: #FFFFFF;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 2px solid #00e1ff;
+}
+
+.formheader {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #00FF2A;
+  margin-bottom: 20px;
+}
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactform label {
+  color: #00FF2A;
+  font-weight: bold;
+}
+
+.contactform input, 
+.contactform textarea {
+  padding: 10px;
+  border: 2px solid #00e1ff;
+  border-radius: 4px;
+  background-color: #020840;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+.contactform input::placeholder, 
+.contactform textarea::placeholder {
+  color: #bbbbbb;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submitbutton {
+  padding: 10px 20px;
+  background-color: #00FF2A;
+  color: #020840;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitbutton:hover {
+  background-color: #02e328;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 640px) {
+  .contact-form-section {
+      width: 90%;
+  }
+}
 @media (min-width: 768px) {
   nav ul {
       display: block;
